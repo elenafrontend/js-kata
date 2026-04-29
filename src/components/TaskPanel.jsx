@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Playground from './Playground.jsx';
 import TestRunner from './TestRunner.jsx';
+import SourceView from './SourceView.jsx';
 
-const TABS = ['playground', 'tests'];
+const TABS = ['playground', 'tests', 'source'];
 
 export default function TaskPanel({ task }) {
   const [activeTab, setActiveTab] = useState('playground');
@@ -35,6 +36,7 @@ export default function TaskPanel({ task }) {
       <div className="tab-content">
         {activeTab === 'playground' && <Playground task={task} />}
         {activeTab === 'tests' && <TestRunner task={task} />}
+        {activeTab === 'source' && <SourceView task={task} />}
       </div>
     </div>
   );
