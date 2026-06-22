@@ -6,6 +6,4 @@ export const meta = {
   description:
     'Implement custom myMap that works like native Array.prototype.map. Handle callback with (value, index, array) arguments, thisArg, and sparse arrays.',
   signature: 'Array.prototype.myMap(callback, thisArg)',
-  defaultInput: '[1, 2, 3]',
-  defaultCallback: 'x => x * 2',
 };

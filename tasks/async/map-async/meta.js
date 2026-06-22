@@ -26,6 +26,4 @@ Constraints:
   • iteratee always calls its cb exactly once.
   • Do not mutate items.
   • Think: why does items.forEach(it => iteratee(it, cb)) break rule 1?`,
-  defaultInput: '',
-  defaultCallback: '',
 };
