@@ -8,17 +8,25 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "devDependencies": {
+    "prettier": "^3.8.4",
     "vitest": "^3.1.1"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "@vitejs/plugin-react": "^4.4.1",
     "vite": "^6.3.3"
   },
-  "keywords": ["javascript", "practice", "polyfills", "interview"],
+  "keywords": [
+    "javascript",
+    "practice",
+    "polyfills",
+    "interview"
+  ],
   "license": "MIT"
 }
